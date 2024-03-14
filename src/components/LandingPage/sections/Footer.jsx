@@ -109,7 +109,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" flex justify-between flex-row border-t border-gray-700 p-8">
+      <div className=" flex justify-between flex-row border-t border-gray-700 p-8 pb-0">
         <p className=" leading-[24px] uppercase font-extralight">Blackcoin</p>
         <p className=" leading-[24px] font-extralight">Copyright © 2020. All rights reserved.</p>
     </div>

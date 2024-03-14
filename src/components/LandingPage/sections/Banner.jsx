@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 const Banner = () => {
   return (
     <div
-      className=""
+      className="h-auto lg:h-screen"
       style={{
         background:
           "linear-gradient(195.75deg, rgba(129, 118, 255, 0.52) 0%, #151518 42%)",
