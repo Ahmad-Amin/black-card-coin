@@ -34,27 +34,27 @@ const Footer = () => {
           </p>
           <ul className=" flex gap-2 flex-col mt-3">
             <li>
-              <a className=" leading-[24px] font-extralight text-base cursor-pointer">
+              <a className="hover:text-customGreen transform duration-150 leading-[24px] font-extralight text-base cursor-pointer">
                 Home
               </a>
             </li>
             <li>
-              <a className=" leading-[24px] font-extralight text-base cursor-pointer">
+              <a className="hover:text-customGreen transform duration-150 leading-[24px] font-extralight text-base cursor-pointer">
                 About Us
               </a>
             </li>
             <li>
-              <a className=" leading-[24px] font-extralight text-base cursor-pointer">
+              <a className="hover:text-customGreen transform duration-150 leading-[24px] font-extralight text-base cursor-pointer">
                 Services
               </a>
             </li>
             <li>
-              <a className=" leading-[24px] font-extralight text-base cursor-pointer">
+              <a className="hover:text-customGreen transform duration-150 leading-[24px] font-extralight text-base cursor-pointer">
                 Contact
               </a>
             </li>
             <li>
-              <a className=" leading-[24px] font-extralight text-base cursor-pointer">
+              <a className="hover:text-customGreen transform duration-150 leading-[24px] font-extralight text-base cursor-pointer">
                 Project
               </a>
             </li>
@@ -66,27 +66,27 @@ const Footer = () => {
           </p>
           <ul className=" flex gap-2 flex-col mt-3">
             <li>
-              <a className=" leading-[24px] font-extralight text-base cursor-pointer">
+              <a className="hover:text-customGreen transform duration-150 leading-[24px] font-extralight text-base cursor-pointer">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a className=" leading-[24px] font-extralight text-base cursor-pointer">
+              <a className="hover:text-customGreen transform duration-150 leading-[24px] font-extralight text-base cursor-pointer">
                 Term Of Service
               </a>
             </li>
             <li>
-              <a className=" leading-[24px] font-extralight text-base cursor-pointer">
+              <a className="hover:text-customGreen transform duration-150 leading-[24px] font-extralight text-base cursor-pointer">
                 Disclaimer
               </a>
             </li>
             <li>
-              <a className=" leading-[24px] font-extralight text-base cursor-pointer">
+              <a className="hover:text-customGreen transform duration-150 leading-[24px] font-extralight text-base cursor-pointer">
                 Credits
               </a>
             </li>
             <li>
-              <a className=" leading-[24px] font-extralight text-base cursor-pointer">
+              <a className="hover:text-customGreen transform duration-150 leading-[24px] font-extralight text-base cursor-pointer">
                 FAQ
               </a>
             </li>
