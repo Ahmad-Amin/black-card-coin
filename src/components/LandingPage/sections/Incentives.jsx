@@ -58,8 +58,8 @@ const Incentives = () => {
         <p className=" text-left font-medium text-5xl mt-14 p-5 lg:p-0">
           Our Roadmap since <p className="text-customGreen">the Beginning</p>
         </p>
-        <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-7 border border-black rounded-2xl mt-16">
-          <div className=" flex flex-col p-8 border-r border-black gap-4">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-7 md:border md:border-black rounded-2xl mt-16">
+          <div className=" flex flex-col p-8 md:border-r md:border-black gap-4">
             <p className=" text-customPurple font-semibold text-2xl">
               September 2023
             </p>
@@ -70,7 +70,7 @@ const Incentives = () => {
               USDT, arrives within 5 days, free of charge.
             </p>
           </div>
-          <div className=" flex flex-col p-8 border-r border-black  gap-4">
+          <div className=" flex flex-col p-8 md:border-r md:border-black  gap-4">
             <p className=" text-customPurple font-semibold text-2xl">
               October 2023
             </p>
