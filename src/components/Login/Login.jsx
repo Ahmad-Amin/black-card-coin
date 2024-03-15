@@ -1,6 +1,7 @@
 import React from "react";
 import mobile from "../../assets/mobileimage.png";
 import whiteLogo from "../../assets/whiteLogo.png";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -55,10 +56,11 @@ const Login = () => {
               <a href="#" className="text-blue-600 ml-2">
                 Forgot password
               </a>
-            </div>
-            <button className=" bg-blue-600 text-black py-3 block font-bold rounded-lg">
+              </div>
+              
+            <Link to={'/dashboard'} className="text-center bg-blue-600 text-black py-3 block font-bold rounded-lg">
               Sign In
-            </button>
+            </Link>
             <p className=" text-center border-t border-t-gray-500 pt-3">
               Don't have an account{" "}
               <span className=" uppercase text-blue-600 ml-2">buy now?</span>
