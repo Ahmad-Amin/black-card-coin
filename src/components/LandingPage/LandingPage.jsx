@@ -8,8 +8,10 @@ import Footer from "./sections/Footer";
 import Navigation from "./sections/Navigation";
 import FaqSection from "./sections/FaqSection";
 import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
 
 const LandingPage = () => {
+
   return (
     <>
       <Banner />
@@ -40,7 +42,13 @@ const LandingPage = () => {
           <div className="  border-white flex items-end justify-end">
             <div className="border-r border-b w-auto inline-block p-5 lg:p-10">
               <div className=" flex gap-5 flex-col">
-                <p className=" font-medium text-2xl md:text-5xl text-right">1.932,234+</p>
+                <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                  {({ isVisible }) => (
+                    <p  className=" font-medium text-2xl md:text-5xl text-right" style={{ height: 50 }}>
+                      {isVisible ? <span><CountUp end={1932234} separator=","  duration={3} />+</span> : <span>0</span>}
+                    </p>
+                  )}
+                </VisibilitySensor>
                 <p className=" font-medium text-2xl text-right">Registered Members</p>
               </div>
             </div>
@@ -48,7 +56,13 @@ const LandingPage = () => {
           <div className=" border-white">
             <div className=" border-b w-auto inline-block p-5 lg:p-10">
               <div className=" flex gap-5 flex-col">
-                <p className=" font-medium text-2xl md:text-5xl text-left">1.932,234+</p>
+                <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                  {({ isVisible }) => (
+                    <p  className=" font-medium text-2xl md:text-5xl text-left" style={{ height: 50 }}>
+                      {isVisible ? <span><CountUp end={1932234} separator="," duration={3} />+</span> : <span>0</span>}
+                    </p>
+                  )}
+                </VisibilitySensor>
                 <p className=" font-medium text-2xl text-left">Total Staked $BCCoin</p>
               </div>
             </div>
@@ -56,7 +70,13 @@ const LandingPage = () => {
           <div className=" border-white flex items-end justify-end">
             <div className="border-r w-auto inline-block p-5 lg:p-10">
               <div className=" flex gap-5 flex-col">
-                <p className=" font-medium text-2xl md:text-5xl text-right">99,234k</p>
+                <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                  {({ isVisible }) => (
+                    <p  className=" font-medium text-2xl md:text-5xl text-right" style={{ height: 50 }}>
+                      {isVisible ? <span><CountUp end={99234} separator="," duration={3}/>k</span> : <span>0k</span>}
+                    </p>
+                  )}
+                </VisibilitySensor>
                 <p className=" font-medium text-2xl text-right">Deposit BLACKCARD</p>
               </div>
             </div>
@@ -65,7 +85,13 @@ const LandingPage = () => {
           <div className=" border-white">
             <div className=" w-auto inline-block p-5 lg:p-10">
               <div className=" flex gap-5 flex-col">
-                <p className=" font-medium text-2xl md:text-5xl text-left">9,32,234+</p>
+                <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                  {({ isVisible }) => (
+                    <p  className=" font-medium text-2xl md:text-5xl text-left" style={{ height: 50 }}>
+                      {isVisible ? <span><CountUp end={932234} separator="," duration={3}/>+</span> : <span>0</span>}
+                    </p>
+                  )}
+                </VisibilitySensor>
                 <p className=" font-medium text-2xl text-left">Distributed Cashback</p>
               </div>
             </div>
