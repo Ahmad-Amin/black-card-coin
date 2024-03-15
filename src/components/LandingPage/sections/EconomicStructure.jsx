@@ -6,8 +6,9 @@ import structureGraphImage from '../../../assets/structureGraphImage.png'
 
 const EconomicStructure = () => {
   return (
-    <div className=" grid lg:grid-cols-2 gap-8 my-36">
-      <div className=" flex flex-col justify-center items-center lg:items-end lg:ml-auto lg:w-9/12 p-8">
+    <div className=' container mx-auto'>
+      <div className=" grid lg:grid-cols-2 gap-8 my-36">
+      <div className=" flex flex-col justify-center items-center lg:items-end lg:ml-auto lg:p-8">
         <div className=" flex flex-col gap-14">
           <h1 className=" font-medium text-6xl  ">
             Economic Structure & Tokenomics
@@ -55,6 +56,7 @@ const EconomicStructure = () => {
       <div className=" flex justify-center lg:justify-start items-center">
         <img src={structureGraphImage} />
       </div>
+    </div>
     </div>
   )
 }

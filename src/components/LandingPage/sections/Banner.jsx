@@ -12,10 +12,11 @@ const Banner = () => {
       }}
     >
       <Navigation />
-      <div className="grid lg:grid-cols-2 ">
-        <div className=" flex flex-col justify-center p-12 lg:p-0 lg:items-end items-start">
+      <div className=" container mx-auto">
+        <div className="grid lg:grid-cols-2 ">
+        <div className=" flex flex-col justify-center p-12 ">
           <div className=" flex flex-col gap-8 lg:gap-14">
-            <h1 className=" font-medium text-2xl md:text-5xl lg:text-7xl uppercase">
+            <h1 className=" font-medium text-xl md:text-4xl xl:text-6xl uppercase">
               <p className=" text-customGreen">Welcome To</p> BlackCardCoin.com
             </h1>
             <p className=" font-thin text-2xl uppercase">
@@ -33,8 +34,9 @@ const Banner = () => {
           </div>
         </div>
         <div className=" flex justify-center items-center">
-          <img src={mobile} />
+          <img className="max-w-full h-auto" src={mobile} />
         </div>
+      </div>
       </div>
     </div>
   );

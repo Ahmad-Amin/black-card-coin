@@ -11,10 +11,11 @@ const Login = () => {
           "linear-gradient(195.75deg, rgba(129, 118, 255, 0.52) 0%, #151518 42%)",
       }}
     >
-      <div className=" absolute top-0 left-0 p-8">
+      <div className=" absolute top-0 left-0 p-8 max-w-full h-auto">
         <img src={whiteLogo} />
       </div>
-      <div className="grid lg:grid-cols-2 ">
+      <div className=" container mx-auto">
+        <div className="grid lg:grid-cols-2 ">
         <div className=" flex justify-center items-center">
           <img src={mobile} />
         </div>
@@ -64,6 +65,7 @@ const Login = () => {
             </p>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

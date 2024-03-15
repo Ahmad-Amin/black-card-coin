@@ -3,8 +3,9 @@ import Compliance from '../../../assets/compliance.png';
 
 const WebsiteStructure = () => {
   return (
-    <div className=" grid lg:grid-cols-2 gap-8 mt-24 mb-12">
-      <div className=" flex flex-col justify-center p-8 lg:p-0 items-center lg:items-end lg:ml-auto lg:w-9/12">
+    <div className=' container mx-auto'>
+      <div className=" grid lg:grid-cols-2 gap-8 mt-24 mb-12">
+      <div className=" flex flex-col justify-center p-8 lg:p-0 items-center lg:items-end lg:ml-auto 2xl:w-9/12">
         <div className=" flex flex-col gap-14">
           <h1 className=" font-medium text-6xl  ">
             Website Experience
@@ -20,6 +21,7 @@ const WebsiteStructure = () => {
       <div className=" flex justify-center lg:justify-start items-center">
         <img src={Compliance} />
       </div>
+    </div>
     </div>
   )
 }

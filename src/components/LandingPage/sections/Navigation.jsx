@@ -1,5 +1,6 @@
 import React from "react";
 import whiteLogo from "../../../assets/whiteLogo.png";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
@@ -19,7 +20,9 @@ const Navigation = () => {
             contact us
           </span>
           <span className=" uppercase transform text-white duration-200 hover:text-customGreen cursor-pointer">
-            login
+            <Link to={'/login'}>
+              login
+              </Link>
           </span>
         </div>
       </div>

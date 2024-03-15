@@ -7,11 +7,12 @@ import lock from "../../../assets/lock.svg";
 
 const Feature = () => {
   return (
-    <div className=" grid lg:grid-cols-2 my-12">
+    <div className=" container mx-auto">
+      <div className=" grid lg:grid-cols-2 my-12">
       <div className=" flex justify-end items-center">
         <img src={mobileImage} />
       </div>
-      <div className=" flex flex-col justify-center p-8 lg:p-0 w-auto items-center lg:items-start lg:w-9/12">
+      <div className=" flex flex-col justify-center p-8 lg:p-0 w-auto items-center lg:items-start">
         <div className=" flex flex-col gap-14">
           <h1 className=" font-medium text-6xl  ">
             Key Features of <span className=" text-customGreen">BlackCard</span>
@@ -74,6 +75,7 @@ const Feature = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

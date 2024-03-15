@@ -7,6 +7,7 @@ import WebsiteStructure from './sections/WebsiteStructure'
 import Footer from "./sections/Footer";
 import Navigation from "./sections/Navigation";
 import FaqSection from "./sections/FaqSection";
+import CountUp from 'react-countup';
 
 const LandingPage = () => {
   return (
