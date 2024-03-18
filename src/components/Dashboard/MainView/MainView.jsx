@@ -4,10 +4,13 @@ import profileImage from "../../../assets/profileImage.svg";
 import StakePurchaseHistory from "../Tables/StakePurchaseHistory";
 import Icon2 from '../../../assets/icon2.svg'
 
-const MainView = () => {
+const MainView = ({setMobileSiderBar}) => {
   return (
-    <div className=" grid grid-cols-4">
-      <div className=" col-span-3 pt-10 py-10">
+    <div className=" grid lg:grid-cols-4 grid-cols-3">
+      <div className="md:hidden absolute top-3 left-5 text-2xl text-white cursor-pointer" onClick={() => setMobileSiderBar(true)}>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      <div className=" lg:col-span-3 col-span-3 pt-10 p-6 lg:p-10">
         <p className=" font-normal text-sm text-gray-500">Dashboard</p>
         <div className=" flex flex-row justify-between items-center">
           <h2 className=" text-3xl font-semibold uppercase my-6">Dashboard</h2>
@@ -53,7 +56,8 @@ const MainView = () => {
           </p>
         </div>
       </div>
-      <div className=" flex justify-center flex-col items-center ">
+      <div className=" lg:col-span-1 col-span-3 p-6 lg:p-10">
+        <div className=" flex justify-center flex-col items-center ">
         <p className=" font-bold text-lg">Profile</p>
         <div className=" my-6">
           <img src={profileImage} />
@@ -80,12 +84,13 @@ const MainView = () => {
           </div>
         </div>
       </div>
+      </div>
 
-      <div className=" col-span-4">
+      <div className=" lg:col-span-4 col-span-3">
         <StakePurchaseHistory />
       </div>
 
-      <div className=" col-span-4">
+      <div className=" lg:col-span-4 col-span-3">
         <div class="bg-dashboardCustomPurple rounded-xl p-6 relative overflow-x-auto">
           <table class=" w-full text-sm text-left rtl:text-right text-gray-400 dark:text-gray-400">
             <thead class="text-xs text-gray-700 dark:bg-gray-700 dark:text-gray-400">
