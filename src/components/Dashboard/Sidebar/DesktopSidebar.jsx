@@ -1,11 +1,24 @@
-import React, { useState} from "react";
+import React, { useEffect} from "react";
 import whiteLogo from "../../../assets/whiteDashboardLogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const DesktopSidebar = ({mobileSiderBar, setMobileSiderBar}) => {
+const DesktopSidebar = ({ mobileSiderBar, setMobileSiderBar }) => {
+  
+  useEffect(() => {
+    if (mobileSiderBar) {
+      document.documentElement.classList.add("overflow-hidden");
+    } else {
+      document.documentElement.classList.remove("overflow-hidden");
+    }
+
+
+    return () => {
+      document.documentElement.classList.remove("overflow-hidden");
+    };
+  }, [mobileSiderBar]);
 
   return (
-    <div className={`${mobileSiderBar ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 transform duration-200 absolute h-screen bg-customBlack w-screen text-black  z-[999] md:w-auto md:h-auto md:bg-transparent md:text-current md:hover:text-current md:z-auto md:p-5 lg:p-10`}>
+      <div className={`${mobileSiderBar ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 transform duration-200 absolute h-screen bg-customBlack w-screen text-black  z-[999] md:w-auto md:h-auto md:bg-transparent md:text-current md:hover:text-current md:z-auto md:p-5 lg:p-10 `}>
       <div className=" relative">
         <button className=" text-white text-3xl absolute top-4 right-5 block md:hidden" onClick={() => setMobileSiderBar(false)}>x</button>
         <div className="flex flex-col gap-6 py-10 items-center">
